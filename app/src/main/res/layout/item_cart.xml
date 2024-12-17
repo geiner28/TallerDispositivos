@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del producto" />
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Producto"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/tvProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Precio"
+        android:gravity="center" />
+
+    <!-- Cantidad -->
+    <TextView
+        android:id="@+id/tvProductQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        android:gravity="center" />
+
+    <!-- Botón aumentar cantidad -->
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+" />
+
+    <!-- Botón disminuir cantidad -->
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="-" />
+
+    <!-- Botón eliminar -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Eliminar" />
+</LinearLayout>

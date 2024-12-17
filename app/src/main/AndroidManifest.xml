@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.taller">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,6 +27,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".CreateCarActivity" />
+
+
+
         <!-- Declarar RegisterActivity -->
         <activity android:name=".RegisterActivity" android:exported="true" />
 
@@ -32,6 +39,17 @@
 
         <!-- Declarar HomeActivity -->
         <activity android:name=".HomeActivity" android:exported="true" />
+
+        <activity android:name=".OrderConfirmationActivity" />
+
+        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".CarListActivity"></activity>
+
+        <activity android:name=".UpdateCarActivity"></activity>
+
+        <activity android:name=".OrderListActivity"></activity>
+
+
 
     </application>
 

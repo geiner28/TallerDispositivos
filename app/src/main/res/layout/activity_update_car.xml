@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Carro"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del carro"/>
+
+        <EditText
+            android:id="@+id/etCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Modelo del carro"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCarBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca del carro"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio del carro"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etCarStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock disponible"
+            android:layout_marginTop="8dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etCarDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateCarSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:layout_marginTop="16dp"
+
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>
